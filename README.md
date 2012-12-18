@@ -6,7 +6,7 @@ An internal tool to monitor subscribed users' Twitter streams for any links they
 
 ### Follow
 
-For a simple start we'll rely on a single Twitter account to maintain our list of users by following them. If necessary we can later add a means to manage the follower list programmatically to tie it into the parent application's user lifecycle.
+For a simple start we'll rely on a single Twitter account to maintain our list of users by following them.
 
 ### Stream
 
