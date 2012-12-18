@@ -1,5 +1,6 @@
 source :rubygems
 
 group :development, :test do
-  gem 'rspec'  
+  gem 'rspec'
+  gem 'autotest'
 end
