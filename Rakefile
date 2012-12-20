@@ -5,6 +5,10 @@ namespace :jobs do
   end
 end
 
+require_relative './lib/link'
+require 'qu-redis'
+require 'qu/tasks'
+
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec)
 task :default => :spec

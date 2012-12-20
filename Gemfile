@@ -6,6 +6,8 @@ gem 'multi_json'
 gem 'rake'
 gem 'httparty'
 gem 'ohm'
+gem 'qu'
+gem 'qu-redis'
 
 group :development, :test do
   gem 'foreman'

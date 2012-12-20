@@ -1,1 +1,2 @@
-worker: bundle exec rake jobs:stream
+stream: bundle exec rake jobs:stream
+links: bundle exec rake qu:work
