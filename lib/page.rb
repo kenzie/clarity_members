@@ -1,4 +1,4 @@
-require 'open-uri'
+require 'httparty'
 
 class Page
 
@@ -9,7 +9,8 @@ class Page
   end
 
   def fetch
-    @content = open(@url) { |f| f.read }
+    response = HTTParty.get(@url)
+    @content = response.body
   end
 
   def search(*terms)
