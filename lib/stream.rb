@@ -2,6 +2,7 @@ require 'em-twitter'
 require 'multi_json'
 require 'twitter'
 require_relative './filter'
+require_relative './link'
 
 $stdout.sync = true
 
@@ -25,9 +26,14 @@ EM::run do
     # puts "DEBUG: #{raw_response}"
     tweet_json = MultiJson.load(raw_response, :symbolize_keys => true)
     if tweet_json.has_key?(:text)
-      tweet = Twitter::Tweet.new(tweet_json)
-      data  = Filter.new(tweet).get_links
-      puts "LINK SPOTTED!!! Screen Name: #{data[:screen_name]} /// Links: #{data[:links].join(', ')}" unless data[:links].empty?
+      tweet = Twitter::Tweet.new(tweet_json) # TODO move Tweet creation back into Filter
+      data  = Filter.new(tweet).get_links # TODO get_links could return a struct with screen_name, id, links array
+      unless data[:links].empty?
+        puts "LINK SPOTTED!!! Screen Name: #{data[:screen_name]} /// Links: #{data[:links].join(', ')}"
+        data[:links].each do |link|
+          Link.create(:screen_name => data[:screen_name], :tweet_id => tweet.id, :url => link)
+        end
+      end
     end
   end
 

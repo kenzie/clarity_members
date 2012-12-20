@@ -1,6 +1,6 @@
 namespace :jobs do
   desc "Worker"
-  task :work do
+  task :stream do
     exec('ruby ./lib/stream.rb')
   end
 end

@@ -10,8 +10,8 @@ describe Link do
     it "has a url" do
       expect(link.url).to eq 'http://route19.com/'
     end
-    it "has a tweet status id" do
-      expect(link.tweet_status_id).to eq 123
+    it "has a tweet id" do
+      expect(link.tweet_id).to eq 123
     end
   end
   describe ".state" do
