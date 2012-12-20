@@ -1,14 +1,17 @@
 require_relative '../../lib/link'
 
 describe Link do
-  link  = Link.new(:screen_name => 'kenziecampbell', :url => 'http://route19.com/')
-  link2 = Link.new(:screen_name => 'kenziecampbell', :url => 'http://clarity.fm/')
+  link  = Link.new(:screen_name => 'kenziecampbell', :tweet_status_id => 123, :url => 'http://route19.com/')
+  link2 = Link.new(:screen_name => 'kenziecampbell', :tweet_status_id => 123, :url => 'http://clarity.fm/')
   describe "#new" do
     it "has a screen name" do
       expect(link.screen_name).to eq 'kenziecampbell'
     end
     it "has a url" do
       expect(link.url).to eq 'http://route19.com/'
+    end
+    it "has a tweet status id" do
+      expect(link.tweet_status_id).to eq 123
     end
   end
   describe ".state" do
