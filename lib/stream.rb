@@ -25,6 +25,7 @@ EM::run do
 
   client.each do |raw_response|
     # puts "DEBUG: #{raw_response}"
+    # TODO clean up this mess
     tweet_json = MultiJson.load(raw_response, :symbolize_keys => true)
     if tweet_json.has_key?(:text)
       tweet = Twitter::Tweet.new(tweet_json) # TODO move Tweet creation back into Filter
