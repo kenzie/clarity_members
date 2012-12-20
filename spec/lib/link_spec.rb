@@ -10,9 +10,6 @@ describe Link do
     it "has a url" do
       expect(link.url).to eq 'http://route19.com/'
     end
-    it "has a default state of new" do
-      expect(link.state).to eq :new
-    end
   end
   describe ".state" do
     it "can be updated" do
