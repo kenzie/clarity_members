@@ -17,4 +17,8 @@ class Page
     !!(@content =~ /#{terms.join('|')}/i)
   end
 
+  def ==(page)
+    self.url == page.url
+  end
+
 end

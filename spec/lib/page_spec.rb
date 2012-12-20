@@ -30,4 +30,11 @@ describe Page do
       expect(page.search('Richard Martell', 'Dan Martin')).to be_false
     end
   end
+  describe "#==" do
+    it "is true when two pages have the same url" do
+      page1 = Page.new("http://www.crunchbase.com/person/dan-martell")
+      page2 = Page.new("http://www.crunchbase.com/person/dan-martell")
+      expect(page1).to eq page2
+    end
+  end
 end
