@@ -25,7 +25,3 @@ Matching pages will be viewable for review and related back to their Clarity use
 * A queue of URLs with state that each relate to a User
 * Allow the reviewer to audit and mark false positives/negatives for future improvements
 * Fuzzy search on aliases: common nicknames, or short versions of names (e.g. Stephen, Steve)
-
-## TODO
-
-* Choose persistence for Links and Users (i.e. Redis, MongoDB, Postgres)
