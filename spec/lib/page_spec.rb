@@ -1,4 +1,8 @@
 require_relative '../../lib/page'
+require 'fakeweb'
+
+page = File.join(File.dirname(__FILE__), '..', 'fixtures', 'crunchbase.curl')
+FakeWeb.register_uri(:get, "http://www.crunchbase.com/person/dan-martell", :response => page)
 
 describe Page do
   describe "#fetch" do

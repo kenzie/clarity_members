@@ -9,4 +9,5 @@ group :development, :test do
   gem 'foreman'
   gem 'rspec'
   gem 'autotest'
+  gem 'fakeweb'
 end

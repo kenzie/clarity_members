@@ -1,0 +1,982 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Connection: close
+Set-Cookie: _crunchbase_session_id=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7AA%253D%253D--228fc38f2277f6b933e79aa1e48a4b0b4be95882; path=/
+Status: 200 OK
+X-Powered-By: 
+ETag: "8ab1c6ba53dedef55c775f2d8df86401"
+X-Runtime: 0.00690
+Content-Length: 31419
+Cache-Control: private, max-age=0, must-revalidate
+Server: nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN">
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+	<head>
+		<script type="text/javascript">if(self !== top) { top.location = self.location; }</script>
+		<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+		<title>Dan Martell | CrunchBase Profile</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--removes image toolbar in ie6 when hovering over an image-->
+		<meta http-equiv="imagetoolbar" content="no">
+		<meta name="verify-v1" content="Bq7pUbAKNsXZX1CUADib2mG86+9F4navslus2seHM98=" >
+		<meta name="google-site-verification" content="jsbIpHVQLY1kZJ_nxdPuFMGL9J3LST9g5mssBq0_Rf0" />		
+		<meta content="Dan Martell skydives and snowboards and believes running is among the secrets to a fruitful life. But the 29-year-old Moncton," name="description" />
+		<link rel="icon" type="image/png" href="/images/favicon.png">
+		<link rel="apple-touch-icon" href="/images/webclip.png"/>
+		<link rel="search" type="application/opensearchdescription+xml" title="CrunchBase" href="/opensearch.xml">
+		
+		<link href="http://www.crunchbase.com/stylesheets/all_1354098501.css" media="screen" rel="stylesheet" type="text/css" />
+    
+		<link rel="stylesheet" type="text/css" media="print" href="/stylesheets/print.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+		
+		<script src="http://www.crunchbase.com/javascripts/all_1354098501.js" type="text/javascript"></script>
+    <script src="http://www.crunchbase.com/javascripts/calendar_date_select/calendar_date_select.js" type="text/javascript"></script>
+<link href="http://www.crunchbase.com/stylesheets/calendar_date_select/default.css" media="screen" rel="stylesheet" type="text/css" />
+		
+		
+		<script src="http://o.aolcdn.com/ads/adsWrapper.js" type="text/javascript"></script>
+		<script type="text/javascript">adSetAdURL("http://www.crunchbase.com/_uac/adpage.html");</script>
+	</head>
+	<body>
+		<div id="welcome" style="display:none;"><div class="close" onClick="Effect.BlindUp('welcome', { duration: 1.0 });ignoreWelcome();return false;">x</div>Welcome to CrunchBase! <a href ="/help/faq" onClick="ignoreWelcome();">Learn more</a></div>
+		<!-- <div id="welcome">CrunchBase is hiring! Check out our <a href="/jobs">open positions &rarr;</a></div> -->
+				
+		<div id="top">
+	<div id="top_strip">
+		<div id="top_strip_left">
+			<ul>
+				<li><div><a href="http://www.techcrunch.com/" title="Tech">TechCrunch</a></div></li>
+				<li id="top_active_tab"><div><a href="http://www.crunchbase.com/" title="CrunchBase">CrunchBase</a></div></li>
+				<li id="tcnetwork_more">
+					<div><a id="tcnetwork_more_link" href="#" onClick="tcnetwork_more(); tcStopPropagation(event); return false;">More</a></div>
+					<div id="tcnetwork_more_content">
+						<ul>
+							<li><a href="http://techcrunch.com/europe" title="TechCrunch UK">TechCrunch Europe</a></li>
+							<li><a href="http://fr.techcrunch.com/" title="TechCrunch France">TechCrunch France</a></li>
+							<li><a href="http://jp.techcrunch.com/" title="TechCrunch Japan">TechCrunch Japan</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="header">
+	<a href="/" id="logo"><img src="http://www.crunchbase.com/images/crunchbase_logo.png" alt="CrunchBase Picture" border="0" /></a>
+	<div class="ads leaderboard">
+		<!-- ADS *************** -->
+
+	
+
+<div id="ads">	
+	<script type="text/javascript">
+		<!--
+			adSetType('F');
+			htmlAdWH("93318425", "728", "90");
+		//-->
+	</script>
+</div>
+	</div>
+	
+</div>
+
+	  	<div id="strip">	
+	<div id="session">
+	
+		<a href="/account/signup" title="Register">Register</a>&nbsp;|
+		<a href="/login" rel="nofollow" title="Login">Login</a> or
+		
+	<fb:login-button onlogin="FB.login(function(response) { window.cb_fb_login(response); });" v='2'>Login</fb:login-button>
+	
+</div>
+
+	<div id="strip_right">		
+		
+	</div>
+	<div id="search">
+	<form action="/search" method="get">
+		<input autocomplete="off" id="search_box" name="query" type="text" />
+		<input class="button" id="search_button" type="submit" value="Search" />		
+		<a href="#" id="advanced_search" onclick="run_advanced_search('/search/advanced/companies', 
+                               $('search_box').value); return false;" rel="nofollow" title="Advanced Search">Advanced Search</a> 
+	</form>
+</div>
+</div>		
+		<div id="breadcrumbs"><a href="/" title="Home" rel="nofollow">Home</a> &gt; <span><a href="/people" title="People" rel="nofollow">People</a></span> &gt; <span>Dan Martell</span></div>
+		
+		<div id="container">
+			<div id="col1">
+	
+
+	
+		<div id="company_logo"><a href="/person/dan-martell" rel="nofollow"><img src="http://www.crunchbase.com/assets/images/resized/0007/0865/70865v3-max-250x250.jpg" border="0" alt="Dan Martell Picture" /></a><div class="right"><a href="/person/dan-martell/edit_image" title="edit" rel="nofollow">edit</a></div></div>
+	
+
+
+	
+
+<h2>
+	General Information
+	<div class="right"><a href="/person/dan-martell/edit" title="edit" rel="nofollow">edit</a></div>
+</h2>
+<div class="col1_content">
+	<table>
+		<tr><td class="td_left">Website</td><td class="td_right"><a href="http://www.danmartell.com" target="_self" title="danmartell.com" >danmartell.com</a></td></tr>
+
+<tr><td class="td_left">Twitter</td><td class="td_right"><a href="http://twitter.com/danmartell" rel="nofollow">@danmartell</a></td></tr>
+
+
+	</table>
+</div>
+
+	
+<h2>
+	Degrees
+	<div class="right"><a href="/person/dan-martell/edit_degrees" title="edit" rel="nofollow">edit</a></div>
+</h2>
+<div class="col1_content">
+	<table>
+	
+	</table>
+</div>
+
+	
+	
+		
+
+		
+			<h2 id="current_relationships">
+				
+					Current
+				
+				Companies
+				<div class="right"><a href="/person/dan-martell/edit_companies" title="edit" rel="nofollow">edit</a></div>	
+			</h2>
+			<div class="col1_content">
+				
+				
+					
+					<div class="col1_people_name "><a href="/company/clarity-fm" title="Clarity.fm">Clarity.fm</a></div><div class="col1_people_title ">Founder</div>
+				
+					
+					<div class="col1_people_name "><a href="/company/flowtown" title="Flowtown">Flowtown</a></div><div class="col1_people_title ">Co-Founder</div>
+				
+					
+					<div class="col1_people_name "><a href="/company/startup-weekend" title="Startup Weekend">Startup Weekend</a></div><div class="col1_people_title ">Advisor</div>
+				
+				
+			</div>
+		
+			<h2 id="former_relationships">
+				Former Companies
+				<div class="right"><a href="/person/dan-martell/edit_companies" title="edit" rel="nofollow">edit</a></div>	
+			</h2>
+			<div class="col1_content">
+								
+				
+					
+					<div class="col1_people_name "><a href="/company/spheric-technologies" title="Spheric Technologies">Spheric Technologies</a></div><div class="col1_people_title ">Founder & CEO</div>
+				
+								
+			</div>
+		
+	
+
+	
+	
+<h2>
+	Web Presences
+	<div class="right"><a href="/person/dan-martell/edit_links" title="edit" rel="nofollow">edit</a></div>
+</h2>
+<div class="col3_content">
+	<ul>
+		
+			
+				<div class="col1_people_name"><a href="http://www.honestly.com/profile?id=464049" title="Honestly.com Reviews">Honestly.com Reviews</a></div><div class="col1_people_title">honestly.com</div>
+	    
+		
+			
+				<div class="col1_people_name"><a href="http://www.linkedin.com/in/dmartell" title="Linkedin">Linkedin</a></div><div class="col1_people_title">linkedin.com</div>
+	    
+		
+			
+				<div class="col1_people_name"><a href="http://angel.co/danmartell" title="Angel List">Angel List</a></div><div class="col1_people_title">angel.co</div>
+	    
+				
+	</ul>
+</div>
+	
+	
+<h2>
+	Tags
+	<div class="right"><a href="/person/dan-martell/edit_tags" title="edit" rel="nofollow">edit</a></div>
+</h2>
+<div class="col1_content">
+	
+		
+	
+</div>
+
+	
+
+</div>
+
+<div id="col2">
+	<div id="col2_internal">
+		
+	  
+		<h1 class="h1_first">
+	
+		Dan Martell
+	
+	<div class="right"><a href="/person/dan-martell/edit_overview" title="edit" rel="nofollow">edit</a></div>
+</h1>
+
+	<p>Dan Martell skydives and snowboards and believes running is among the secrets to a fruitful life. But the 29-year-old Moncton, N.B., native insists business is his sport.
+With a background in computer programming but no formal business training, Danâ€™s passion for technology and business has meant he has had a hand in launching several companies to date.</p>
+
+<p>Dan has been described as not having a â€œknowing-doing gap.â€  At 25, and just 10 months into his 2004 start-up, Spheric Technologies Inc., the Canadian firm was landing so many deals south of the border that instead of seeking visa sponsorships for his traveling employees, he moved quickly to set up a U.S. office.  Growing by an average of 152% per year, Spheric raked in three business awards before the economy forced the company to effectively close in early 2009.</p>
+
+<p>An award winning Entrepreneur, Dan recently co-founded Flowtown, a company focused on providing web-based tools that allow small businesses to measure their online marketing efforts. Now living in  San Francisco, Martell spends the majority of his time looking at ways to build a bridge between Silicon Valley and New Brunswick. As an informal angel investor, he is active in advising entrepreneurs using metric-based marketing tactics to gain market adoption.</p>
+
+<p>An avid reader who dreams of remaining a lifelong student, Dan invests in startups whose opportunities and ideas he can get excited about. His philosophy is to build companies that solve the business problems he faces. He takes risks in work and life and focuses on the journey over the reward. Martell is relentless in his work ethic â€“ if a job has to get done, heâ€™ll do it right away.</p>
+
+<p>Martell is a board member of Propel ICT and also volunteers his time working with youth battling addictions at Portage NB. He is passionately involved in facilitating micro-lending to entrepreneurs in developing countries through the non-profit, Kiva.org.</p>
+
+		<h2>
+	Milestones
+	<div class="right"><a href="/person/dan-martell/edit_milestones" title="edit" rel="nofollow">edit</a></div>
+</h2>
+<ul id="milestones">
+	
+		
+			
+<li class=milestone_relationship style=list-style:none;>
+<div class="milestone_favicon">
+	<img alt="Check" class="milestone_favicon" src="http://www.crunchbase.com/images/check.png" />
+</div>	
+	<div class="milestone_text">
+	
+	
+	
+	
+	
+	
+		<a href="/person/dan-martell" title="Dan Martell">Dan Martell</a> added a position as Founder at <a href="/company/clarity-fm" title="Clarity.fm">Clarity.fm</a>.	
+	
+	
+	
+	
+	</div>
+	<div class="meta_milestone">
+		Posted 2/19/12 at 11:59am 
+	</div>
+</li>
+
+		
+	
+		
+			
+<li class=milestone_relationship style=list-style:none;>
+<div class="milestone_favicon">
+	<img alt="Check" class="milestone_favicon" src="http://www.crunchbase.com/images/check.png" />
+</div>	
+	<div class="milestone_text">
+	
+	
+	
+	
+	
+	
+		<a href="/person/dan-martell" title="Dan Martell">Dan Martell</a> added a position as Advisor at <a href="/company/startup-weekend" title="Startup Weekend">Startup Weekend</a>.	
+	
+	
+		
+			(6/1/10) 
+		
+	
+	
+	
+	</div>
+	<div class="meta_milestone">
+		Posted 9/16/10 at 11:57am 
+	</div>
+</li>
+
+		
+	
+		
+			
+<li class=milestone_relationship style=list-style:none;>
+<div class="milestone_favicon">
+	<img alt="Check" class="milestone_favicon" src="http://www.crunchbase.com/images/check.png" />
+</div>	
+	<div class="milestone_text">
+	
+	
+	
+	
+	
+	
+		<a href="/person/dan-martell" title="Dan Martell">Dan Martell</a> added a position as Founder & CEO at <a href="/company/spheric-technologies" title="Spheric Technologies">Spheric Technologies</a>.	
+	
+	
+	
+	
+	</div>
+	<div class="meta_milestone">
+		Posted 12/22/09 at 2:40pm 
+	</div>
+</li>
+
+		
+	
+		
+			
+<li class=milestone_relationship style=list-style:none;>
+<div class="milestone_favicon">
+	<img alt="Check" class="milestone_favicon" src="http://www.crunchbase.com/images/check.png" />
+</div>	
+	<div class="milestone_text">
+	
+	
+	
+	
+	
+	
+		<a href="/person/dan-martell" title="Dan Martell">Dan Martell</a> added a position as Co-Founder at <a href="/company/flowtown" title="Flowtown">Flowtown</a>.	
+	
+	
+	
+	
+	</div>
+	<div class="meta_milestone">
+		Posted 12/22/09 at 2:36pm 
+	</div>
+</li>
+
+		
+	
+		
+			
+<li class=milestone_investment style=list-style:none;>
+<div class="milestone_favicon">
+	<img alt="Dollar" class="milestone_favicon" src="http://www.crunchbase.com/images/dollar.png" />
+</div>	
+	<div class="milestone_text">
+	
+	
+	
+	
+	
+	
+		<a href="/person/dan-martell" title="Dan Martell">Dan Martell</a> invested in <a href="/company/leadsift" title="LeadSift">LeadSift</a>.	
+	
+	
+		
+			(11/16/12) 
+		
+	
+	
+	
+	</div>
+	<div class="meta_milestone">
+		Posted 10/30/12 at 2:20am  via <a href="http://techcrunch.com/2012/11/27/leadsift-raises-500k-to-make-twitter-foursquare-more-fertile-ground-for-sales-leads/">techcrunch.com</a>
+	</div>
+</li>
+
+		
+	
+		
+			
+<li class=milestone_investment style=list-style:none;>
+<div class="milestone_favicon">
+	<img alt="Dollar" class="milestone_favicon" src="http://www.crunchbase.com/images/dollar.png" />
+</div>	
+	<div class="milestone_text">
+	
+	
+	
+	
+	
+	
+		<a href="/person/dan-martell" title="Dan Martell">Dan Martell</a> invested in <a href="/company/manpacks" title="Manpacks">Manpacks</a>.	
+	
+	
+		
+			(8/1/11) 
+		
+	
+	
+	
+	</div>
+	<div class="meta_milestone">
+		Posted 2/2/12 at 12:33am 
+	</div>
+</li>
+
+		
+	
+		
+			
+<li class=milestone_investment style=list-style:none;>
+<div class="milestone_favicon">
+	<img alt="Dollar" class="milestone_favicon" src="http://www.crunchbase.com/images/dollar.png" />
+</div>	
+	<div class="milestone_text">
+	
+	
+	
+	
+	
+	
+		<a href="/person/dan-martell" title="Dan Martell">Dan Martell</a> invested in <a href="/company/highscore-house" title="HighScore House">HighScore House</a>.	
+	
+	
+		
+			(1/26/12) 
+		
+	
+	
+	
+	</div>
+	<div class="meta_milestone">
+		Posted 1/28/12 at 7:37pm  via <a href="http://techcrunch.com/2012/01/25/highscore-house/">techcrunch.com</a>
+	</div>
+</li>
+
+		
+	
+		
+			
+<li class=milestone_investment style=list-style:none;>
+<div class="milestone_favicon">
+	<img alt="Dollar" class="milestone_favicon" src="http://www.crunchbase.com/images/dollar.png" />
+</div>	
+	<div class="milestone_text">
+	
+	
+	
+	
+	
+	
+		<a href="/person/dan-martell" title="Dan Martell">Dan Martell</a> invested in <a href="/company/intercom" title="Intercom">Intercom</a>.	
+	
+	
+		
+			(1/25/12) 
+		
+	
+	
+	
+	</div>
+	<div class="meta_milestone">
+		Posted 1/25/12 at 6:56pm  via <a href="http://techcrunch.com/2012/01/25/biz-stone-500-startups-and-others-put-1m-in-social-crm-for-web-businesses-intercom/">techcrunch.com</a>
+	</div>
+</li>
+
+		
+	
+		
+			
+<li class=milestone_investment style=list-style:none;>
+<div class="milestone_favicon">
+	<img alt="Dollar" class="milestone_favicon" src="http://www.crunchbase.com/images/dollar.png" />
+</div>	
+	<div class="milestone_text">
+	
+	
+	
+	
+	
+	
+		<a href="/person/dan-martell" title="Dan Martell">Dan Martell</a> invested in <a href="/company/foodspotting" title="Foodspotting">Foodspotting</a>.	
+	
+	
+		
+			(8/25/10) 
+		
+	
+	
+	
+	</div>
+	<div class="meta_milestone">
+		Posted 8/25/10 at 8:28am  via <a href="http://techcrunch.com/2010/08/25/foodspotting-funding/">techcrunch.com</a>
+	</div>
+</li>
+
+		
+	
+		
+			
+<li class=milestone_investment style=list-style:none;>
+<div class="milestone_favicon">
+	<img alt="Dollar" class="milestone_favicon" src="http://www.crunchbase.com/images/dollar.png" />
+</div>	
+	<div class="milestone_text">
+	
+	
+	
+	
+	
+	
+		<a href="/person/dan-martell" title="Dan Martell">Dan Martell</a> invested in <a href="/company/worldly-developments" title="Worldly Developments">Worldly Developments</a>.	
+	
+	
+		
+			(3/5/10) 
+		
+	
+	
+	
+	</div>
+	<div class="meta_milestone">
+		Posted 3/8/10 at 12:54pm  via <a href="http://techcrunch.com/2010/03/08/plancast-funding/">techcrunch.com</a>
+	</div>
+</li>
+
+		
+	
+</ul>
+		
+<h2>Investments</h2>
+<table>
+	<thead>
+		<tr>
+			<td><strong>Company</strong></td>
+			<td><strong>Date</strong></td>
+			<td><strong>Round</strong></td>
+			<td><strong>Size</strong></td>
+			<td><strong>Participants</strong></td>
+		</tr>
+	</thead>
+			
+		<tr><td class=""><a href="/company/leadsift" title="LeadSift">LeadSift</a> <sup class="super_src"></sup></td><td>11/12</td><td>Seed</td><td>C$1.1M</td><td>8</td></tr>
+			
+		<tr><td class=""><a href="/company/highscore-house" title="HighScore House">HighScore House</a> <sup class="super_src"></sup></td><td>1/12</td><td>Seed</td><td>C$235k</td><td>8</td></tr>
+			
+		<tr><td class=""><a href="/company/intercom" title="Intercom">Intercom</a> <sup class="super_src"></sup></td><td>1/12</td><td>Seed</td><td>$1M</td><td>16</td></tr>
+			
+		<tr><td class=""><a href="/company/manpacks" title="Manpacks">Manpacks</a> <sup class="super_src"></sup></td><td>8/11</td><td>Angel</td><td>$500k</td><td>12</td></tr>
+			
+		<tr><td class=""><a href="/company/foodspotting" title="Foodspotting">Foodspotting</a> <sup class="super_src"></sup></td><td>8/10</td><td>Seed</td><td>$750k</td><td>9</td></tr>
+			
+		<tr><td class=""><a href="/company/worldly-developments" title="Worldly Developments">Worldly Developments</a> <sup class="super_src"></sup></td><td>3/10</td><td>Seed</td><td>$800k</td><td>14</td></tr>
+	
+</table>
+
+		
+<h2>
+	Videos
+	
+</h2>		
+
+				
+		
+<h2>Sources</h2>
+<ol>
+	 
+	
+<li class="sub_src">		
+	
+		<a href="http://techcrunch.com/2012/11/27/leadsift-raises-500k-to-make-twitter-foursquare-more-fertile-ground-for-sales-leads/" title="LeadSift Raises $500K To Make Twitter, Foursquare More Fertile Ground For Sales Leads">LeadSift Raises $500K To Make Twitter, Foursquare More Fertile Ground For Sales Leads</a> (techcrunch.com) 
+		[<a href="/company/leadsift/edit_funding" title="edit" rel="nofollow">edit</a>]
+	
+</li>
+
+<li class="sub_src">		
+	
+		<a href="http://techcrunch.com/2012/01/25/highscore-house/" title="Can Kids Love Chores? 500 Startups Alum HighScore House Says Yes">Can Kids Love Chores? 500 Startups Alum HighScore House Says Yes</a> (techcrunch.com) 
+		[<a href="/company/highscore-house/edit_funding" title="edit" rel="nofollow">edit</a>]
+	
+</li>
+
+<li class="sub_src">		
+	
+		<a href="http://techcrunch.com/2012/01/25/biz-stone-500-startups-and-others-put-1m-in-social-crm-for-web-businesses-intercom/" title="Biz Stone, 500 Startups And Others Put $1M In CRM For Web Businesses Intercom">Biz Stone, 500 Startups And Others Put $1M In CRM For Web Businesses Intercom</a> (techcrunch.com) 
+		[<a href="/company/intercom/edit_funding" title="edit" rel="nofollow">edit</a>]
+	
+</li>
+
+<li class="sub_src">		
+	
+		Citation Needed 
+		[<a href="/company/manpacks/edit_funding" title="add" rel="nofollow">add</a>]
+	
+</li>
+
+<li class="sub_src">		
+	
+		<a href="http://techcrunch.com/2010/08/25/foodspotting-funding/" title="techcrunch.com">techcrunch.com</a> 
+		[<a href="/company/foodspotting/edit_funding" title="edit" rel="nofollow">edit</a>]
+	
+</li>
+
+<li class="sub_src">		
+	
+		<a href="http://techcrunch.com/2010/03/08/plancast-funding/" title="techcrunch.com">techcrunch.com</a> 
+		[<a href="/company/worldly-developments/edit_funding" title="edit" rel="nofollow">edit</a>]
+	
+</li>
+
+</ol>
+<script type="text/javascript">
+    	<!--
+    	hook_up_srcs();
+    	-->
+    </script>	
+		
+	</div>
+</div>
+
+<div id="col3">
+	<div class="col3_content">
+	<div id="edit_page">
+				
+		<a href="/person/dan-martell/edit" title="Edit This Page" rel="nofollow">Edit This Page</a>
+ 	  
+		<br />
+		
+		
+		  Last Edited 
+		  11/28/12
+		
+		<div id="spacer" style="height:8px;clear:both;"></div>
+		<p>
+			<a href="/person/dan-martell/revisions" rel="nofollow" title="Revision History">Revision History</a>
+			<span style="margin-left: 0.25em">
+			<a href="http://www.crunchbase.com/person/dan-martell/revisions.rss" rel="nofollow"><img src="http://www.crunchbase.com/images/icons/feed-icon-16x16.gif" alt="RSS Picture" border="0" /></a>
+			</span>										
+		</p>
+		<div id="spacer" style="height:10px;clear:both;"></div>
+		
+			
+			
+			<form method="post" action="/followings?entity_id=48778&amp;entity_type=Person" class="button-to"><div><input class="follow_button" title="Follow updates" type="submit" value="Follow this Person" /></div></form>
+			
+		</p>
+	</div>
+</div>
+	<!-- ADS *************** -->
+
+	
+
+<div id="ads">	
+	<script type="text/javascript">
+		<!--
+			adSetType('F');
+			htmlAdWH("93318415", "RR", "RR");
+		//-->
+	</script>
+</div>
+	<h3>Sharing</h3>
+	<div id="sharing">
+		<small>Share this page on Twitter or Facebook:</small>
+		<div class="clear"></div>
+		<script type="text/javascript">
+		tweetmeme_url = 'http://www.crunchbase.com/person/dan-martell';
+		tweetmeme_style = 'compact';
+		tweetmeme_service = 'bit.ly';
+		service_api = 'crunchbase:R_e4450f2efc86e670201feb42b519d467';
+		</script>
+			<div class="sharing_buttons">
+				<ul>
+					<li>
+				<g:plusone size="medium" count="true" href="http://www.crunchbase.com/person/dan-martell"></g:plusone>
+					</li>
+					<li>
+				<script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>
+					</li>
+					<li>
+					<a name="fb_share" id="fb_share" share_url="http://www.crunchbase.com/person/dan-martell" class="snap_nopreview"></a>
+					<script src="http://www.facebook.com/connect.php/js/FB.SharePro/" type="text/javascript"></script>
+				</li>
+				</ul>
+			</div>
+		<div class="clear"></div>
+		<small>Or copy this code to embed a widget: </small>
+<input readonly id="embed_input" onclick="$('embed_input').select()" type="text" value="&lt;div class=&quot;cbw snap_nopreview&quot;&gt;&lt;div class=&quot;cbw_header&quot;&gt;&lt;script src=&quot;http://www.crunchbase.com/javascripts/widget.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;div class=&quot;cbw_header_text&quot;&gt;&lt;a href=&quot;http://www.crunchbase.com/&quot;&gt;CrunchBase Information&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;cbw_content&quot;&gt;&lt;div class=&quot;cbw_subheader&quot;&gt;&lt;a href=&quot;http://www.crunchbase.com/person/dan-martell&quot;&gt;Dan Martell&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;cbw_subcontent&quot;&gt;&lt;script src=&quot;http://www.crunchbase.com/cbw/person/dan-martell.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;/div&gt;&lt;div class=&quot;cbw_footer&quot;&gt;Information provided by &lt;a href=&quot;http://www.crunchbase.com/&quot;&gt;CrunchBase&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" /></td>
+<span style="float:right;"><small><a href="/widget/preview?people%5B%5D%5Bid%5D=48778&amp;people%5B%5D%5Border%5D=1" rel="nofollow" title="More">customize »</a></small></span>
+
+	</div>
+	
+		
+	
+<h3>
+	TechCrunch Posts
+	<a href="http://www.techcrunch.com" rel="nofollow"><img src="http://www.crunchbase.com/images/icons/techcrunch_new_logo_sm.png" alt="TechCrunch Logo Small Picture" border="0" /></a>
+</h3>
+<div class="col3_content">
+	<ul>
+		<li>
+	
+		<div class="recently_link">
+			
+				<a href="http://techcrunch.com/2012/05/03/clarity-mobile-mentorship-app/" title="Clarity Launches Mobile Mentorship Service To Connect Startup...">Clarity Launches Mobile Mentorship Service To Connect Startup...</a>
+				
+			
+		</div>
+		<div class="recently_desc">
+			May 3, 2012
+		</div>
+	
+</li><li>
+	
+		<div class="recently_link">
+			
+				<a href="http://techcrunch.com/2011/10/13/marketing-startup-flowtown-gets-swooped-up-by-demandforce/" title="Marketing Startup Flowtown Gets Swooped Up By&nbsp;Demandforce">Marketing Startup Flowtown Gets Swooped Up By&nbsp;Demandforce</a>
+				
+			
+		</div>
+		<div class="recently_desc">
+			October 13, 2011
+		</div>
+	
+</li><li>
+	
+		<div class="recently_link">
+			
+				<a href="http://techcrunch.com/2010/08/25/flowtown-funding/" title="Flowtown Gets Seed Funding To Decipher The Socialness Of...">Flowtown Gets Seed Funding To Decipher The Socialness Of...</a>
+				
+			
+		</div>
+		<div class="recently_desc">
+			August 25, 2010
+		</div>
+	
+</li><li>
+	
+		<div class="recently_link">
+			
+				<a href="http://techcrunch.com/2010/03/08/plancast-funding/" title="Investors Say &#8220;Count Me In&#8221; To&nbsp;Plancast">Investors Say &#8220;Count Me In&#8221; To&nbsp;Plancast</a>
+				
+			
+		</div>
+		<div class="recently_desc">
+			March 8, 2010
+		</div>
+	
+</li>
+	</ul>
+	
+	<div class="tc_see_more">
+		<a href="/person/dan-martell/posts" title="See All">See All</a>
+	</div>
+	
+</div>
+
+
+	
+	
+	
+
+
+	
+<h3>
+	External Links
+	<div class="right">
+		<div class="right"><a href="/person/dan-martell/edit_links" title="edit" rel="nofollow">edit</a></div>		
+	</div>
+</h3>
+<div class="col3_content">
+	<ul>
+				
+	</ul>
+</div>
+
+
+	<h3>CrunchBase API</h3>
+<div class="col3_content">
+	<a href="/v/1/person/dan-martell.js" rel="nofollow">JSON Representation</a> of this page.<br />
+	<span style="float: right;"><a href="/api" rel="nofollow">More API docs &raquo;</a></span>
+	<div style="clear: both;"></div>
+</div>
+	
+	<h3>Sponsors</h3>
+	<div class="col3_content sponsors">
+		<script language="javascript">
+		<!--
+			
+				adSetType('F');htmlAdWH('93311061', '125', '125');adSetType('');
+				adSetType('F');htmlAdWH('93311062', '125', '125');adSetType('');
+				adSetType('F');htmlAdWH('93311063', '125', '125');adSetType('');
+			
+		//-->
+		</script>
+		<noscript></noscript>
+		<br /><br />
+		<a href="http://www.techcrunch.com/advertise/" rel="nofollow" title="Become a Sponsor">Become a Sponsor</a>			
+	</div>
+
+</div>
+		</div>
+		<div style="clear:both;"></div>
+<div id="footer">
+  <a href="/about" rel="nofollow" title="About">About</a> |
+  <a href="http://www.techcrunch.com/advertise/" rel="nofollow" title="Advertise">Advertise</a> |
+  <a href="/api" title="API">API</a> |        
+  <a href="http://blog.crunchbase.com" title="Blog">Blog</a> |        
+  <a href="/help/faq" title="FAQ">FAQ</a> |
+  <a href="/feedback/new" rel="nofollow" title="Feedback">Feedback</a> |
+
+  <a href="/newsletter/signup" rel="nofollow" title="Subscribe">Subscribe</a> |
+
+  <a href="http://twitter.com/crunchbase" rel="nofollow" title="Twitter">Twitter</a> |
+  <a href="/widget" title="Widget">Widget</a> |
+  
+  &copy; 2012 CrunchBase
+  
+	<a href="http://www.techcrunch.com/" id="footer_logo"><img src="http://www.crunchbase.com/images/techcrunch_logo_footer.png" alt="TechCrunch Picture" border="0" /></a> |
+</div>
+<div id="subfooter">
+	<a href="/help/terms-of-service" rel="nofollow" title="Terms of Service">Terms of Service</a> | <a href="/help/privacy-policy" rel="nofollow" title="Privacy Policy">Privacy Policy</a> | <a href="/help/licensing-policy" rel="nofollow" title="Licensing Policy">Licensing Policy</a>
+</div>
+
+		
+<!-- Google Analytics -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-991406-10";	urchinTracker();</script>
+
+<!-- Quantcast -->
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script><script type="text/javascript">_qacct="p-4dUj-JZzmC-eA";quantserve();</script>
+
+<!-- CrazyEgg -->
+<script type="text/javascript" src="http://cetrk.com/pages/scripts/0009/0873.js"> </script>
+
+<!-- Sailthru Horizon --> 
+<script type="text/javascript">
+(function() {
+    function loadHorizon() { 
+        var s = document.createElement('script'); 
+        s.type = 'text/javascript'; 
+        s.async = true;
+        s.src = ('https:' === location.protocol?'https://d1gp8joe0evc8s.cloudfront.net':'http://cdn.sail-horizon.com')+'/horizon/v1.js';
+        var x = document.getElementsByTagName('script')[0]; 
+        x.parentNode.insertBefore(s, x);
+    }
+    loadHorizon();
+    var oldOnLoad = window.onload;
+    window.onload = function() {
+        if (typeof oldOnLoad === 'function') {
+            oldOnLoad();
+        }
+        Sailthru.setup({
+            domain: 'horizon.crunchbase.com',
+        });
+    };
+})();
+</script>
+
+
+<!-- Omniture -->
+
+<script type="text/javascript">
+// *** Replace square bracketed placeholders with values provided to you in your implementation documentation ***
+
+bN_cfg = {
+// The "h" parameter whitelists this hostname for beacon initialization.
+// Note: Can be a string or an array of hostnames. Use "location.hostname" to match URL of current page
+h: "localhost,crunchbase.com"
+};
+
+function runOmni()
+{
+s_265.pfxID="crb";
+s_265.pageName="Dan Martell - profile";
+s_265.channel="us.crunchbase";
+s_265.linkInternalFilters="javascript:,crunchbase.com";
+s_265.prop1="profile";
+s_265.prop2="person";
+s_265.mmxgo=true; // Enables the comScore 360 beacon if s_265_account contains a global report suite
+
+
+var s_code=s_265.t();
+}
+s_265_account ="aoltechcrunch,aolsvc"; /* Use "aoltechcrunch,aolsvc"; for PROD */
+(function(){
+    var d = document, s = d.createElement('script');
+    s.type = 'text/javascript';
+    s.src = (location.protocol == 'https:' ? 'https://s' : 'http://o') + '.aolcdn.com/os_merge/?file=/aol/beacon.min.js&file=/aol/omniture.min.js';
+    d.getElementsByTagName('head')[0].appendChild(s);
+})();
+</script>
+
+		<script type="text/javascript">
+var _sf_async_config={uid:2905,domain:"crunchbase.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+       "static.chartbeat.com/js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+
+</script>
+		<script type="text/javascript">
+		document.observe("dom:loaded", function() {
+			if(document.cookie.length > 0 && document.cookie.indexOf("cbwelcome=") == -1){
+				editWelcomeCookie(true)
+			}else{
+				if(parseInt(getCookie("cbwelcome")) < 6){
+					editWelcomeCookie(false)	
+				}
+			}
+			if(parseInt(getCookie("cbwelcome")) <= 5){
+				Effect.BlindDown('welcome', { duration: 0.5 });	
+			}
+		});
+		</script>
+		
+		
+    <div id="fb-root"></div>
+    <script type="text/javascript">
+      window.fbAsyncInit = function() {
+        FB._initialized = false;
+        FB.init({
+          appId  : '147576338201',
+          status : true,
+          cookie : true,
+          channelUrl : null,
+          oauth : true,
+          xfbml : true // parse XFBML
+        });
+
+	window.cb_fb_login = function(response) {
+	  if (response.authResponse) {
+	    window.location.href = "/auth/connect?userID=" + response.authResponse.userID + "&accessToken=" + response.authResponse.accessToken;
+	  }
+	};
+        
+        FB.Event.subscribe('auth.login', function(response) {
+          //window.location.href = "/facebook_connect/connect?uid=" + response.authResponse.userID;
+        });
+        FB.Event.subscribe('auth.logout', function(response) {
+          //window.location.href = "/logout";
+        });
+       
+        if(document.getElementById('auth-logoutlink')) {
+          document.getElementById('auth-logoutlink').addEventListener('click', function(){
+            window.location.href = "/logout";
+          });
+        }
+      };
+      
+      (function() {
+        var e = document.createElement('script'); e.async = true;
+        e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+        document.getElementById('fb-root').appendChild(e);
+      }());
+    </script>
+		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+		<script src="//cdn.optimizely.com/js/15009920.js"></script>
+	</body>
+</html>
