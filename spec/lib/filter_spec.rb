@@ -1,4 +1,5 @@
 require_relative '../../lib/filter'
+require 'twitter'
 
 def build_tweet(raw_tweet)
   Twitter::Tweet.new(MultiJson.load(raw_tweet, :symbolize_keys => true))

@@ -1,5 +1,3 @@
-require 'twitter'
-
 class Filter
 
   attr_reader :tweet
