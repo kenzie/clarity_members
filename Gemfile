@@ -5,6 +5,7 @@ gem 'twitter'
 gem 'multi_json'
 gem 'rake'
 gem 'httparty'
+gem 'ohm'
 
 group :development, :test do
   gem 'foreman'

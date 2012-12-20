@@ -1,17 +1,18 @@
-class User
+require 'ohm'
 
-  attr_reader :name, :clarity_screen_name, :twitter_screen_name
-  attr_accessor :aliases
+class User < Ohm::Model
 
-  def initialize(opts = {})
-    @name = opts[:name]
-    @clarity_screen_name = opts[:clarity_screen_name]
-    @twitter_screen_name = opts[:twitter_screen_name]
-    @aliases = Array(opts[:aliases])
-  end
+  attribute :name
+  attribute :clarity_screen_name
+  attribute :twitter_screen_name
+  attribute :aliases
+
+  unique :clarity_screen_name
+  index :clarity_screen_name
+  index :twitter_screen_name
 
   def search_terms
-    [@name] + @aliases
+    Array(self.name) + Array(self.aliases)
   end
 
 end

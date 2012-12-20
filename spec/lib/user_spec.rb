@@ -12,9 +12,6 @@ describe User do
     it "has a Twitter screen name" do
       expect(user.twitter_screen_name).to eq 'kenziecampbell'
     end
-    it "has an empty aliases array" do
-      expect(user.aliases).to eq []
-    end
   end
   describe "#new with aliases array" do
     user = User.new(:name => 'Kenzie Campbell', :clarity_screen_name => 'kenzie', :twitter_screen_name => 'kenziecampbell', :aliases => ['one', 'two', 'three'])
