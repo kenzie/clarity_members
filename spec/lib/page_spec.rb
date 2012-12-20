@@ -2,13 +2,17 @@ require_relative '../../lib/page'
 require 'fakeweb'
 
 page = File.join(File.dirname(__FILE__), '..', 'fixtures', 'crunchbase.curl')
-FakeWeb.register_uri(:get, "http://www.crunchbase.com/person/dan-martell", :response => page)
+FakeWeb.register_uri(:get, %r|http://www\.crunchbase\.com/|, :response => page)
 
 describe Page do
   describe "#fetch" do
     it "gets content from a web page" do
       page = Page.new("http://www.crunchbase.com/person/dan-martell")
       expect(page.fetch).to include 'crunchbase'
+    end
+    it "can handle a url with spaces" do
+      page2 = Page.new("http://www.crunchbase.com/person/dan martell")
+      expect(page2.url).to eq 'http://www.crunchbase.com/person/dan%20martell'
     end
   end
   describe "#search" do

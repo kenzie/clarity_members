@@ -5,7 +5,7 @@ class Page
   attr_reader :url, :content
 
   def initialize(url)
-    @url = url
+    @url = url.gsub(/\s/, '%20') # Twitter can return poorly formatted URLs
   end
 
   def fetch
