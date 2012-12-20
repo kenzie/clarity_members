@@ -14,7 +14,7 @@ Tweets from the stream will be checked for links, and selected if they have one 
 
 ### Page Search
 
-Link content will be fetched and a searched on the related user's name. Pages are selected if they have a match.
+Link content will be fetched and searched for the related user's name/aliases. Pages are selected for review if they have a match.
 
 ### Review
 
@@ -24,4 +24,8 @@ Matching pages will be viewable for review and related back to their Clarity use
 
 * A queue of URLs with state that each relate to a User
 * Allow the reviewer to audit and mark false positives/negatives for future improvements
-* Fuzzy search on aliases, common nicknames, or short versions of names (e.g. Stephen, Steve)
+* Fuzzy search on aliases: common nicknames, or short versions of names (e.g. Stephen, Steve)
+
+## TODO
+
+* Choose persistence for Links and Users (i.e. Redis, MongoDB, Postgres)
