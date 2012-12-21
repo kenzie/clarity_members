@@ -1,5 +1,4 @@
 require 'em-twitter'
-require 'multi_json'
 
 require_relative './filter'
 
