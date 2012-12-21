@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require 'sinatra/activerecord'
 require 'sinatra/reloader'
+require 'active_support/core_ext/string'
 
 class Review < Sinatra::Base
 
@@ -32,7 +33,12 @@ class Review < Sinatra::Base
     set :database, 'sqlite3:///db/review_test.sqlite3'
   end
 
-  require_relative './review/routes.rb'
-  require_relative './review/models/init'
+  get '/' do
+    @links = Link.recent.matches.hundred
+    haml :index
+  end
+
+  require_relative './review/models/user'
+  require_relative './review/models/link'
 
 end
