@@ -1,1 +1,11 @@
-= @user.name
+%h3 Recent Matching Links
+%dl
+  - @links.each do |link|
+    %dt
+      = link.user.name
+      %small
+        –
+        = link.user.twitter_screen_name
+    %dd
+      %a{:href => link.url, :title => link.title}
+        = link.title.truncate(60)

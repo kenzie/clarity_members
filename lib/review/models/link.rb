@@ -2,8 +2,15 @@ require_relative '../../page.rb'
 
 class Link < ActiveRecord::Base
 
+  scope :matches, where(:state => 'match')
+  scope :hundred, limit(100)
+  scope :recent, order('updated_at DESC')
+
+  def user
+    User.where(:twitter_screen_name => screen_name).first
+  end
+
   def search!
-    user = User.where(:twitter_screen_name => screen_name).first
     if user.nil?
       self.state = 'nouser'
       self.save
@@ -13,6 +20,7 @@ class Link < ActiveRecord::Base
       terms = user.search_terms
       match = page.search(terms)
       self.state = (match) ? 'match' : 'nomatch'
+      self.title = page.title
       self.save
     end
   end

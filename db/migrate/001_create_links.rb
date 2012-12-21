@@ -4,6 +4,7 @@ class CreateLinks < ActiveRecord::Migration
       t.string :screen_name
       t.integer :tweet_id
       t.text :url
+      t.text :title
       t.string :state
       t.timestamps
     end

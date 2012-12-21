@@ -30,6 +30,13 @@ describe Page do
       expect(page.search('Richard Martell', 'Dan Martin')).to be_false
     end
   end
+  describe ".title" do
+    it "Returns the html title attribute text" do
+      page = Page.new("http://www.crunchbase.com/person/dan-martell")
+      page.content = "<html><title>Test Title</title><body>More Content</body></html>"
+      expect(page.title).to eq "Test Title"
+    end
+  end
   describe ".==" do
     it "is true when two pages have the same url" do
       page1 = Page.new("http://www.crunchbase.com/person/dan-martell")

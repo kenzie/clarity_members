@@ -1,6 +1,6 @@
 class Review < Sinatra::Base
   get '/' do
-    @user = User.first
+    @links = Link.recent.matches.hundred
     haml :index
   end
 end

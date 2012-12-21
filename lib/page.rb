@@ -2,7 +2,8 @@ require 'httparty'
 
 class Page
 
-  attr_reader :url, :content
+  attr_reader :url
+  attr_accessor :content
 
   def initialize(url)
     @url = url.gsub(/\s/, '%20') # Twitter can return poorly formatted URLs
@@ -17,6 +18,10 @@ class Page
   def search(*terms)
     # TODO handle or rescue Encoding::CompatibilityError
     !!(@content =~ /#{terms.join('|')}/i)
+  end
+
+  def title
+    /<title>(.*?)<\/title>/.match(@content)[1]
   end
 
   def ==(page)
