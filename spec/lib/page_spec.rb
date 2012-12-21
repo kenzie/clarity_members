@@ -52,6 +52,11 @@ describe Page do
       page.content = "<html><title>Kevin V. Wong &bull; parislemon:\n\n wetheurban:\n\n HOT OR NOT: INSTAGRAM...</title></html>"
       expect(page.title).to eq "Kevin V. Wong &bull; parislemon:\n\n wetheurban:\n\n HOT OR NOT: INSTAGRAM..."
     end
+    it "can is case insensitive" do
+      page = Page.new("http://www.crunchbase.com/person/dan-martell")
+      page.content = "<html><TITLE>Test Title</TITLE></html>"
+      expect(page.title).to eq "Test Title"
+    end
   end
   describe ".==" do
     it "is true when two pages have the same url" do
