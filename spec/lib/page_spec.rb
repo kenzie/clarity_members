@@ -37,10 +37,15 @@ describe Page do
     end
   end
   describe ".title" do
-    it "Returns the html title attribute text" do
+    it "returns the html title attribute text" do
       page = Page.new("http://www.crunchbase.com/person/dan-martell")
       page.content = "<html><title>Test Title</title><body>More Content</body></html>"
       expect(page.title).to eq "Test Title"
+    end
+    it "returns nil when there is no title attribute" do
+      page = Page.new("http://www.crunchbase.com/person/dan-martell")
+      page.content = "<html><body>More Content</body></html>"
+      expect(page.title).to eq nil
     end
   end
   describe ".==" do
