@@ -1,4 +1,4 @@
-require_relative '../../lib/link'
+require_relative './spec_helper'
 
 describe Link do
   link  = Link.new(:screen_name => 'kenziecampbell', :tweet_id => 123, :url => 'http://route19.com/')

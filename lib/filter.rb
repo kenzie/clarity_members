@@ -3,7 +3,7 @@ require 'multi_json'
 require 'qu'
 require 'qu-redis'
 
-require_relative './link'
+require_relative './review/models/link'
 
 class Filter
 
@@ -14,7 +14,6 @@ class Filter
     links = tweet.urls.map { |url| url.expanded_url }
     return false if links.empty?
     Qu.enqueue(Link, tweet.user.screen_name, tweet.id, links)
-    puts "QUEUED LINKS: #{tweet.user.screen_name}, ##{tweet.id}, [#{links.join(',')}]"
     true
   end
 

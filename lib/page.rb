@@ -9,11 +9,13 @@ class Page
   end
 
   def fetch
+    # TODO handle or rescue URI::InvalidURIError
     response = HTTParty.get(@url)
     @content = response.body
   end
 
   def search(*terms)
+    # TODO handle or rescue Encoding::CompatibilityError
     !!(@content =~ /#{terms.join('|')}/i)
   end
 

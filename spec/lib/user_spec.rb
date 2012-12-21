@@ -1,4 +1,4 @@
-require_relative '../../lib/user'
+require_relative './spec_helper'
 
 describe User do
   describe "#new" do
