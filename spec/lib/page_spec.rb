@@ -5,7 +5,7 @@ page = File.join(File.dirname(__FILE__), '..', 'fixtures', 'crunchbase.curl')
 FakeWeb.register_uri(:get, %r|http://www\.crunchbase\.com/|, :response => page)
 
 describe Page do
-  describe "#fetch" do
+  describe ".fetch" do
     it "gets content from a web page" do
       page = Page.new("http://www.crunchbase.com/person/dan-martell")
       expect(page.fetch).to include 'crunchbase'
@@ -15,7 +15,7 @@ describe Page do
       expect(page2.url).to eq 'http://www.crunchbase.com/person/dan%20martell'
     end
   end
-  describe "#search" do
+  describe ".search" do
     page = Page.new("http://www.crunchbase.com/person/dan-martell")
     page.fetch
     it "returns true for matched search terms" do
@@ -30,7 +30,7 @@ describe Page do
       expect(page.search('Richard Martell', 'Dan Martin')).to be_false
     end
   end
-  describe "#==" do
+  describe ".==" do
     it "is true when two pages have the same url" do
       page1 = Page.new("http://www.crunchbase.com/person/dan-martell")
       page2 = Page.new("http://www.crunchbase.com/person/dan-martell")
