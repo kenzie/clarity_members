@@ -31,7 +31,7 @@ EM::run do
       unless data[:links].empty?
         puts "LINK SPOTTED!!! Screen Name: #{data[:screen_name]} /// Links: #{data[:links].join(', ')}"
         data[:links].each do |link|
-          link = Link.create(:screen_name => data[:screen_name], :tweet_id => tweet.id, :url => link)
+          link = Link.create(:screen_name => data[:screen_name], :tweet_id => tweet_json[:id], :url => link)
           link.async_search
         end
       end
