@@ -1,6 +1,5 @@
 require 'sinatra/base'
 require 'sinatra/activerecord'
-require 'sinatra/reloader'
 require 'active_support/core_ext/string'
 
 class Review < Sinatra::Base
@@ -22,6 +21,7 @@ class Review < Sinatra::Base
   end
 
   configure :development do
+    require 'sinatra/reloader'
     register Sinatra::Reloader
     enable :logging, :dump_errors, :raise_errors
     ENV["LOG_LEVEL"] = "DEBUG"

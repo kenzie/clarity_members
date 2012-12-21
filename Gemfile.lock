@@ -39,12 +39,6 @@ GEM
     multi_json (1.5.0)
     multi_xml (0.5.1)
     multipart-post (1.1.5)
-    nest (1.1.2)
-      redis
-    ohm (1.2.0)
-      nest (~> 1.0)
-      redis
-      scrivener (~> 0.0.3)
     pg (0.14.1)
     qu (0.2.0)
       multi_json
@@ -69,7 +63,6 @@ GEM
     rspec-expectations (2.12.1)
       diff-lcs (~> 1.1.3)
     rspec-mocks (2.12.0)
-    scrivener (0.0.3)
     simple_oauth (0.2.0)
     simple_uuid (0.3.0)
     sinatra (1.3.3)
@@ -112,7 +105,6 @@ DEPENDENCIES
   haml
   httparty
   multi_json
-  ohm
   pg
   qu
   qu-redis
