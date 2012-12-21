@@ -19,6 +19,7 @@ class Link < ActiveRecord::Base
       match = page.search(terms)
       self.state = (match) ? 'match' : 'nomatch'
       self.title = page.title
+      self.url   = page.final_url
       self.save
     end
   end

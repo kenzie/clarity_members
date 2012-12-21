@@ -1,3 +1,5 @@
+$stdout.sync = true
+
 require './lib/review.rb'
 require 'sinatra/activerecord/rake'
 

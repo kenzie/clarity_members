@@ -22,7 +22,7 @@ class Page
   end
 
   def title
-    /<title>(.*?)<\/title>/.match(@content).try([],1)
+    (/<title>(.*?)<\/title>/m).match(@content).try(:[],1)
   end
 
   def ==(page)
