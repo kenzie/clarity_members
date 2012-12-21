@@ -1,3 +1,5 @@
+$stdout.sync = true
+
 namespace :jobs do
   desc "Worker"
   task :stream do
@@ -5,7 +7,7 @@ namespace :jobs do
   end
 end
 
-require_relative './lib/link'
+require_relative './lib/filter'
 require 'qu-redis'
 require 'qu/tasks'
 

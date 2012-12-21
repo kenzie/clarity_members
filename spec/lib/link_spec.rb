@@ -20,4 +20,11 @@ describe Link do
       expect(link.state).to eq :fetched
     end
   end
+  describe "#perform" do
+    it "creates a Link for each url" do
+      links = Link.perform('kenziecampbell', 123, ['http://route19.com/'])
+      expect(links.size).to eq 1
+      expect(links.first.screen_name).to eq 'kenziecampbell'
+    end
+  end
 end

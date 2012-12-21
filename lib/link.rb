@@ -12,36 +12,37 @@ class Link < Ohm::Model
   attribute :url
   attribute :state
 
+  index :screen_name
+  index :state
+
+  def search!
+    user = User.find(:twitter_screen_name => screen_name).first
+    if user.nil?
+      self.state = 'nouser'
+      self.save
+      puts "NO MATCHING USER!!! #{screen_name}"
+    else
+      page = Page.new(url)
+      page.fetch
+      terms = user.search_terms
+      match = page.search(terms)
+      self.state = (match) ? 'match' : 'nomatch'
+      puts "NAME MATCH!!! #{terms.join(',')} /// #{url}" if match
+      self.save
+    end
+  end
+
   def ==(link)
     self.screen_name == link.screen_name && self.url == link.url
   end
 
   # Background Processing
 
-  $stdout.sync = true
-
-  def async_search
-    job = Qu.enqueue(Link, self.id)
-    puts "ADDING PAGE TO QUEUE... #{self.url}"
-  end
-
-  def self.perform(link_id)
-    link = Link[link_id.to_i]
-    puts "SEARCHING PAGE... #{link.url}"
-    user = User.find(:twitter_screen_name => link.screen_name).first
-    if user.nil?
-      link.state = 'nouser'
-      link.save
-      puts "NO MATCHING USER!!! #{link.screen_name}"
-    else
-      page = Page.new(link.url)
-      page.fetch
-      terms = user.search_terms
-      match = page.search(terms)
-      link.state = (match) ? 'match' : 'nomatch'
-      puts "NAME MATCH!!! #{terms.join(',')} /// #{link.url}" if match
-      link.save
-    end
+  def self.perform(screen_name, tweet_id, urls)
+    puts "PROCESSING LINKS: #{screen_name}, ##{tweet_id}, [#{urls.join(',')}]"
+    links = urls.map{ |url| Link.create(:screen_name => screen_name, :tweet_id => tweet_id, :url => url) }
+    # Search links
+    links.each{ |link| link.search! }
   end
 
 end
