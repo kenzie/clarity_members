@@ -1,4 +1,10 @@
-%h3 Recent Matching Links
+%h2 Stats
+%p
+  Links:
+  = Link.count
+  &nbsp; Matches:
+  = Link.matches.count
+%h2 Recent Matching Links
 %dl
   - @links.each do |link|
     %dt
