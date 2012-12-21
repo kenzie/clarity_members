@@ -8,4 +8,4 @@
         = link.user.twitter_screen_name
     %dd
       %a{:href => link.url, :title => link.title}
-        = link.title.truncate(60)
+        = link.title.try(:truncate,60)
