@@ -1,6 +1,4 @@
 require 'ohm'
-require 'qu'
-require 'qu-redis'
 
 require_relative './user'
 require_relative './page'
@@ -41,7 +39,6 @@ class Link < Ohm::Model
   def self.perform(screen_name, tweet_id, urls)
     puts "PROCESSING LINKS: #{screen_name}, ##{tweet_id}, [#{urls.join(',')}]"
     links = urls.map{ |url| Link.create(:screen_name => screen_name, :tweet_id => tweet_id, :url => url) }
-    # Search links
     links.each{ |link| link.search! }
   end
 
