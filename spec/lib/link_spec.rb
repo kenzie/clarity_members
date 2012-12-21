@@ -22,6 +22,8 @@ describe Link do
   end
   describe "#perform" do
     it "creates a Link for each url" do
+      Link.any_instance.stub(:search!)
+      Link.stub(:create).and_return(link)
       links = Link.perform('kenziecampbell', 123, ['http://route19.com/'])
       expect(links.size).to eq 1
       expect(links.first.screen_name).to eq 'kenziecampbell'
