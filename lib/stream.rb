@@ -1,6 +1,6 @@
 require 'em-twitter'
 
-require_relative './review.rb'
+require_relative './review'
 require_relative './filter'
 
 $stdout.sync = true
