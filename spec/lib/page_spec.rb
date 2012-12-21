@@ -1,8 +1,8 @@
 require_relative './spec_helper'
 require 'fakeweb'
 
-page = File.join(File.dirname(__FILE__), '..', 'fixtures', 'crunchbase.curl')
-FakeWeb.register_uri(:get, %r|http://www\.crunchbase\.com/|, :response => page)
+page1 = File.join(File.dirname(__FILE__), '..', 'fixtures', 'crunchbase.curl')
+FakeWeb.register_uri(:get, %r|http://www\.crunchbase\.com/|, :response => page1)
 
 describe Page do
   describe ".fetch" do
@@ -14,6 +14,12 @@ describe Page do
       page2 = Page.new("http://www.crunchbase.com/person/dan martell")
       expect(page2.url).to eq 'http://www.crunchbase.com/person/dan%20martell'
     end
+    # COMMENTED OUT FOR SPEED
+    # it "saves the final redirect url" do
+    #   page3 = Page.new('http://buff.ly/UejBux')
+    #   page3.fetch
+    #   expect(page3.final_url).to eq 'http://www.slideshare.net/poornimav/when-to-build-and-when-to-buy'
+    # end
   end
   describe ".search" do
     page = Page.new("http://www.crunchbase.com/person/dan-martell")
