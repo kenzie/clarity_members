@@ -40,5 +40,6 @@ class Review < Sinatra::Base
 
   require_relative './review/models/user'
   require_relative './review/models/link'
+  require_relative './review/models/page'
 
 end

@@ -1,4 +1,4 @@
-require_relative '../../lib/page'
+require_relative './spec_helper'
 require 'fakeweb'
 
 page = File.join(File.dirname(__FILE__), '..', 'fixtures', 'crunchbase.curl')

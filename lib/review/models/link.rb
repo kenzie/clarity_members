@@ -1,5 +1,3 @@
-require_relative '../../page.rb'
-
 class Link < ActiveRecord::Base
 
   scope :matches, where(:state => 'match')
