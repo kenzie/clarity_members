@@ -1,9 +1,11 @@
+require 'twitter'
+
 class Filter
 
   attr_reader :tweet
 
-  def initialize(tweet)
-    @tweet = tweet
+  def initialize(tweet_json)
+    @tweet = Twitter::Tweet.new(tweet_json)
   end
 
   def get_links
