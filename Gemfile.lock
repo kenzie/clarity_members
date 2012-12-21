@@ -45,6 +45,7 @@ GEM
       nest (~> 1.0)
       redis
       scrivener (~> 0.0.3)
+    pg (0.14.1)
     qu (0.2.0)
       multi_json
     qu-redis (0.2.0)
@@ -112,6 +113,7 @@ DEPENDENCIES
   httparty
   multi_json
   ohm
+  pg
   qu
   qu-redis
   rake

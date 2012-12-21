@@ -10,7 +10,6 @@ gem 'qu'
 gem 'qu-redis'
 gem 'sinatra'
 gem 'sinatra-activerecord'
-gem 'sqlite3'
 gem 'thin'
 gem 'haml'
 
@@ -20,4 +19,9 @@ group :development, :test do
   gem 'autotest'
   gem 'fakeweb'
   gem 'sinatra-reloader'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
 end
