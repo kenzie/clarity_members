@@ -4,7 +4,8 @@ body {
 }
 
 ul.links {
-  list-style: none
+  list-style: none;
+  margin-left: 0;
 }
 
 ul.links li {
