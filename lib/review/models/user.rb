@@ -23,4 +23,16 @@ class User < ActiveRecord::Base
     "https://clarity.fm/#/#{clarity_screen_name}"
   end
 
+  def avatar_url_or_default
+    return avatar_url unless avatar_url.nil?
+    "/images/avatar-48-default.gif"
+  end
+
+  # Background Processing
+
+  def self.perform(screen_name, avatar_url)
+    user = where(:twitter_screen_name => screen_name).first
+    user.update_attributes({:avatar_url => avatar_url})
+  end
+
 end
