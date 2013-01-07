@@ -32,7 +32,7 @@ class User < ActiveRecord::Base
 
   def self.perform(screen_name, avatar_url)
     user = where(:twitter_screen_name => screen_name).first
-    user.update_attributes({:avatar_url => avatar_url})
+    user.update_attributes({:avatar_url => avatar_url}) unless user.nil?
   end
 
 end
