@@ -2,9 +2,7 @@ require 'csv'
 
 class User < ActiveRecord::Base
 
-  def links
-    Link.where(:screen_name => twitter_screen_name)
-  end
+  has_many :links, :foreign_key => 'screen_name', :primary_key => 'twitter_screen_name'
 
   def search_terms
     Array(self.name) + Array(self.aliases)

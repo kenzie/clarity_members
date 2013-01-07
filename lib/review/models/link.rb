@@ -4,9 +4,7 @@ class Link < ActiveRecord::Base
   scope :fifty, limit(50)
   scope :recent, order('updated_at DESC')
 
-  def user
-    User.where(:twitter_screen_name => screen_name).first
-  end
+  belongs_to :user, :foreign_key => 'screen_name', :primary_key => 'twitter_screen_name'
 
   def search!
     if user.nil?
