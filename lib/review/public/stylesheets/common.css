@@ -2,3 +2,18 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+dl.links dt {
+  margin-top: 10px;
+}
+
+a span.source {
+  display: block;
+  color: #777;
+  font-size: 11px;
+}
+
+img.icon {
+  margin-left: 5px;
+  vertical-align: bottom;
+}

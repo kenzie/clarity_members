@@ -21,4 +21,8 @@ class User < ActiveRecord::Base
     end
   end
 
+  def clarity_url
+    "https://clarity.fm/#/#{clarity_screen_name}"
+  end
+
 end

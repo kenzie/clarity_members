@@ -1,7 +1,7 @@
 class Link < ActiveRecord::Base
 
   scope :matches, where(:state => 'match')
-  scope :hundred, limit(100)
+  scope :fifty, limit(50)
   scope :recent, order('updated_at DESC')
 
   def user
@@ -22,6 +22,14 @@ class Link < ActiveRecord::Base
       self.url   = page.final_url
       self.save
     end
+  end
+
+  def source
+    URI.parse(url).host.downcase
+  end
+
+  def tweet_url
+    "http://twitter.com/#{screen_name}/status/#{tweet_id}"
   end
 
   def ==(link)

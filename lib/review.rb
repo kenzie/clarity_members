@@ -35,7 +35,7 @@ class Review < Sinatra::Base
   end
 
   get '/' do
-    @links = Link.recent.matches.hundred
+    @links = Link.recent.matches.fifty
     haml :index
   end
 
