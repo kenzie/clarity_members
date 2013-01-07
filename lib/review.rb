@@ -17,6 +17,7 @@ class Review < Sinatra::Base
   end
 
   configure :production do
+    set :database_extras, {:pool => 5}
     set :database, ENV['DATABASE_URL']
   end
 
