@@ -4,10 +4,6 @@ require 'active_support/core_ext/string'
 
 class Review < Sinatra::Base
 
-  use Rack::Auth::Basic, "Clarity Monitor" do |username, password|
-    [username, password] == ['admin', 'admin']
-  end
-
   register Sinatra::ActiveRecordExtension
 
   configure do
