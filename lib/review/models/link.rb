@@ -36,8 +36,8 @@ class Link < ActiveRecord::Base
 
   # Background Processing
 
-  def self.perform(screen_name, tweet_id, urls)
-    links = urls.map{ |url| Link.create(:screen_name => screen_name, :tweet_id => tweet_id, :url => url) }
+  def self.perform(twitter_user_id, screen_name, tweet_id, urls)
+    links = urls.map{ |url| Link.create(:twitter_user_id => twitter_user_id, :screen_name => screen_name, :tweet_id => tweet_id, :url => url) }
     links.each{ |link| link.search! }
   end
 
