@@ -13,8 +13,8 @@ class Filter
     tweet = Twitter::Tweet.new(tweet_json)
     links = tweet.urls.map { |url| url.expanded_url }
     return false if links.empty?
-    Qu.enqueue(Link, tweet.user.screen_name, tweet.id, links)
-    Qu.enqueue(User, tweet.user.screen_name, tweet.user.profile_image_url)
+    Qu.enqueue(Link, tweet.user.id, tweet.user.screen_name, tweet.id, links)
+    Qu.enqueue(User, tweet.user.id, tweet.user.screen_name, tweet.user.profile_image_url)
     true
   end
 

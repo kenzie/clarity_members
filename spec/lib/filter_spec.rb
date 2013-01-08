@@ -9,14 +9,14 @@ describe Filter do
 
   describe "#harvest_links" do
     it "processes a tweet with a link" do
-      Qu.should_receive(:enqueue).with(Link, 'kenziecampbell', 280663508364951552, ["http://gapingvoid.com/2012/12/13/artisnal/#comment-93508"])
-      Qu.should_receive(:enqueue).with(User, 'kenziecampbell', 'http://si0.twimg.com/profile_images/2638378421/a4110e8ca43fd6edcaf2a58db4cff871_normal.jpeg')
+      Qu.should_receive(:enqueue).with(Link, 2884181, 'kenziecampbell', 280663508364951552, ["http://gapingvoid.com/2012/12/13/artisnal/#comment-93508"])
+      Qu.should_receive(:enqueue).with(User, 2884181, 'kenziecampbell', 'http://si0.twimg.com/profile_images/2638378421/a4110e8ca43fd6edcaf2a58db4cff871_normal.jpeg')
       filter = Filter.harvest_links(raw_tweet_with_one_link)
       expect(filter).to be_true
     end
     it "processes a tweet with multiple links" do
-      Qu.should_receive(:enqueue).with(Link, "mattwynne", 281137831995392000, ["http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/", "http://37signals.com/svn/posts/3372"])
-      Qu.should_receive(:enqueue).with(User, 'mattwynne', 'http://si0.twimg.com/profile_images/59047117/Matt_Black_and_White_normal.jpg')
+      Qu.should_receive(:enqueue).with(Link, 15994184, "mattwynne", 281137831995392000, ["http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/", "http://37signals.com/svn/posts/3372"])
+      Qu.should_receive(:enqueue).with(User, 15994184, 'mattwynne', 'http://si0.twimg.com/profile_images/59047117/Matt_Black_and_White_normal.jpg')
       filter = Filter.harvest_links(raw_tweet_with_multiple_links)
       expect(filter).to be_true
     end
