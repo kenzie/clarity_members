@@ -13,6 +13,7 @@ class Page
     # TODO handle or rescue URI::InvalidURIError
     response = HTTParty.get(@url)
     @content = response.body
+    @title = (/<title>(.*?)<\/title>/im).match(@content).try(:[],1)
     response
   end
 
@@ -21,7 +22,7 @@ class Page
     @embedly_description = response['description']
     @embedly_provider = response['provider_name']
     @embedly_type = response['type']
-    @title = response['title']
+    @title = response['title'] unless response['title'].nil?
     @url = response['url'] unless response['url'].nil?
     response
   end

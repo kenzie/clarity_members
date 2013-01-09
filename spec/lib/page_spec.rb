@@ -52,23 +52,9 @@ describe Page do
   describe ".title" do
     it "returns the html title attribute text" do
       page = Page.new("http://www.crunchbase.com/person/dan-martell")
-      page.content = "<html><title>Test Title</title><body>More Content</body></html>"
-      expect(page.title).to eq "Test Title"
-    end
-    it "returns nil when there is no title attribute" do
-      page = Page.new("http://www.crunchbase.com/person/dan-martell")
-      page.content = "<html><body>More Content</body></html>"
-      expect(page.title).to eq nil
-    end
-    it "can handle a title with line breaks" do
-      page = Page.new("http://www.crunchbase.com/person/dan-martell")
-      page.content = "<html><title>Kevin V. Wong &bull; parislemon:\n\n wetheurban:\n\n HOT OR NOT: INSTAGRAM...</title></html>"
-      expect(page.title).to eq "Kevin V. Wong &bull; parislemon:\n\n wetheurban:\n\n HOT OR NOT: INSTAGRAM..."
-    end
-    it "can is case insensitive" do
-      page = Page.new("http://www.crunchbase.com/person/dan-martell")
-      page.content = "<html><TITLE>Test Title</TITLE></html>"
-      expect(page.title).to eq "Test Title"
+      page.fetch
+      page.fetch_embedly
+      expect(page.title).to eq "Dan Martell | CrunchBase Profile"
     end
   end
   describe ".==" do
