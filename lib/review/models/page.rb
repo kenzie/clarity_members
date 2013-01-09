@@ -22,7 +22,7 @@ class Page
     @embedly_provider = response['provider_name']
     @embedly_type = response['type']
     @title = response['title']
-    @url = response['url']
+    @url = response['url'] unless response['url'].nil?
     response
   end
 
