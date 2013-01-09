@@ -7,19 +7,11 @@ class Link < ActiveRecord::Base
   belongs_to :user, :foreign_key => 'screen_name', :primary_key => 'twitter_screen_name'
 
   def search!
-    set_link_as_nouser and return if user.nil?
-    page = Page.new(url)
-    page.fetch
-    terms = user.search_terms
-    match = page.search(terms)
-    self.state = (match) ? 'match' : 'nomatch'
-    page.fetch_embedly if match
-    self.title               = page.title
-    self.url                 = page.url
-    self.embedly_description = page.embedly_description
-    self.embedly_provider    = page.embedly_provider
-    self.embedly_type        = page.embedly_type
-    self.save
+    set_state('nouser') and return if user.nil?
+    page  = Page.new(url).fetch
+    match = page.search(user.search_terms)
+    set_state('nomatch') and return unless match
+    populate_match_with_embedly(page)
   end
 
   def source
@@ -34,8 +26,19 @@ class Link < ActiveRecord::Base
     self.screen_name == link.screen_name && self.url == link.url
   end
 
-  def set_link_as_nouser
-    self.state = 'nouser'
+  def set_state(state)
+    self.state = state
+    self.save
+  end
+
+  def populate_match_with_embedly(page)
+    page.fetch_embedly
+    self.title               = page.title
+    self.url                 = page.url
+    self.embedly_description = page.embedly_description
+    self.embedly_provider    = page.embedly_provider
+    self.embedly_type        = page.embedly_type
+    self.state               = 'match'
     self.save
   end
 

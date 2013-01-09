@@ -14,7 +14,7 @@ class Page
     response = HTTParty.get(@url)
     @content = response.body
     @title = (/<title>(.*?)<\/title>/im).match(@content).try(:[],1)
-    response
+    self
   end
 
   def fetch_embedly
@@ -24,7 +24,7 @@ class Page
     @embedly_type = response['type']
     @title = response['title'] unless response['title'].nil?
     @url = response['url'] unless response['url'].nil?
-    response
+    self
   end
 
   def search(*terms)

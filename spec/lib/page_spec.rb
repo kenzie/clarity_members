@@ -7,10 +7,11 @@ FakeWeb.register_uri(:get, %r|http://www\.crunchbase\.com/|, :response => crunch
 FakeWeb.register_uri(:get, %r|http://api\.embed\.ly/|, :response => embedly)
 
 describe Page do
+
   describe ".fetch" do
     it "gets content from a web page" do
       page = Page.new("http://www.crunchbase.com/person/dan-martell")
-      expect(page.fetch).to include 'crunchbase'
+      expect(page.fetch.title).to eq 'Dan Martell | CrunchBase Profile'
     end
     it "can handle a url with spaces" do
       page2 = Page.new("http://www.crunchbase.com/person/dan martell")
@@ -23,10 +24,10 @@ describe Page do
     #   expect(page3.final_url).to eq 'http://www.slideshare.net/poornimav/when-to-build-and-when-to-buy'
     # end
   end
+
   describe ".fetch_embedly" do
     it "has a embedly description, provider, type" do
       page = Page.new("http://www.crunchbase.com/person/dan-martell")
-      page.fetch
       page.fetch_embedly
       expect(page.embedly_description).to eq "Dan Martell skydives and snowboards and believes running is among the secrets to a fruitful life. But the 29-year-old Moncton,"
       expect(page.embedly_provider).to eq "Crunchbase"
@@ -34,6 +35,7 @@ describe Page do
       expect(page.title).to eq "Dan Martell | CrunchBase Profile"
     end
   end
+
   describe ".search" do
     page = Page.new("http://www.crunchbase.com/person/dan-martell")
     page.fetch
@@ -49,6 +51,7 @@ describe Page do
       expect(page.search('Richard Martell', 'Dan Martin')).to be_false
     end
   end
+
   describe ".title" do
     it "returns the html title attribute text" do
       page = Page.new("http://www.crunchbase.com/person/dan-martell")
@@ -57,6 +60,7 @@ describe Page do
       expect(page.title).to eq "Dan Martell | CrunchBase Profile"
     end
   end
+
   describe ".==" do
     it "is true when two pages have the same url" do
       page1 = Page.new("http://www.crunchbase.com/person/dan-martell")
@@ -64,4 +68,5 @@ describe Page do
       expect(page1).to eq page2
     end
   end
+
 end
