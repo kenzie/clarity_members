@@ -6,7 +6,7 @@ class Page
   attr_accessor :url, :content, :title, :embedly_description, :embedly_provider, :embedly_type
 
   def initialize(url)
-    @url = url.gsub(/\s/, '%20') # Twitter can return poorly formatted URLs
+    @url = URI.encode(url) # Twitter can return poorly formatted URLs
   end
 
   def fetch

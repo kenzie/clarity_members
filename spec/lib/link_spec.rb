@@ -29,4 +29,9 @@ describe Link do
       expect(links.first.screen_name).to eq 'kenziecampbell'
     end
   end
+  describe ".source" do
+    it "returns the domain" do
+      expect(link.source).to eq "route19.com"
+    end
+  end
 end
