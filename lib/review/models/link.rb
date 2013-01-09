@@ -7,6 +7,7 @@ class Link < ActiveRecord::Base
   belongs_to :user, :foreign_key => 'screen_name', :primary_key => 'twitter_screen_name'
 
   def search!
+    # TODO where does this logic belong?
     if user.nil?
       self.state = 'nouser'
       self.save
@@ -16,8 +17,12 @@ class Link < ActiveRecord::Base
       terms = user.search_terms
       match = page.search(terms)
       self.state = (match) ? 'match' : 'nomatch'
-      self.title = page.title
-      self.url   = page.final_url
+      page.fetch_embedly if match
+      self.title               = page.title
+      self.url                 = page.url
+      self.embedly_description = page.embedly_description
+      self.embedly_provider    = page.embedly_provider
+      self.embedly_type        = page.embedly_type
       self.save
     end
   end

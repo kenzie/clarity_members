@@ -1,9 +1,9 @@
 require 'httparty'
+require 'cgi'
 
 class Page
 
-  attr_reader :url
-  attr_accessor :content, :final_url
+  attr_accessor :url, :content, :title, :embedly_description, :embedly_provider, :embedly_type
 
   def initialize(url)
     @url = url.gsub(/\s/, '%20') # Twitter can return poorly formatted URLs
@@ -12,17 +12,23 @@ class Page
   def fetch
     # TODO handle or rescue URI::InvalidURIError
     response = HTTParty.get(@url)
-    @final_url = response.request.last_uri.to_s
     @content = response.body
+    response
+  end
+
+  def fetch_embedly
+    response = HTTParty.get("http://api.embed.ly/1/oembed?url=#{CGI.escape(@url)}&key=#{ENV['EMBEDLY_KEY']}")
+    @embedly_description = response['description']
+    @embedly_provider = response['provider_name']
+    @embedly_type = response['type']
+    @title = response['title']
+    @url = response['url']
+    response
   end
 
   def search(*terms)
     # TODO handle or rescue Encoding::CompatibilityError
     !!(@content =~ /#{terms.join('|')}/i)
-  end
-
-  def title
-    (/<title>(.*?)<\/title>/im).match(@content).try(:[],1)
   end
 
   def ==(page)

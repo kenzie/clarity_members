@@ -13,7 +13,7 @@ class Review < Sinatra::Base
   end
 
   configure :production do
-    set :database_extras, {:pool => 5}
+    set :database_extras, {:pool => 8}
     set :database, ENV['DATABASE_URL']
   end
 
@@ -31,6 +31,7 @@ class Review < Sinatra::Base
   end
 
   get '/' do
+    # TODO eager load the links' users
     @links = Link.recent.matches.fifty
     haml :index
   end

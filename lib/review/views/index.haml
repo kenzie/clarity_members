@@ -17,6 +17,8 @@
           %img.icon{:src => '/images/icon-16-clarity.gif', :alt => 'Clarity'}
       %div.link
         %a{:href => link.url, :title => link.title, :target => '_blank'}
-          = link.title.try(:truncate,60)
-          %span.source
-            = link.source
+          = link.title.try(:truncate,120)
+        %span.description
+          = link.embedly_description
+        %span.source
+          = link.source

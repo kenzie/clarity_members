@@ -27,7 +27,14 @@ ul.links li img.avatar {
   margin: 2px;
 }
 
-a span.source {
+span.description {
+  display: block;
+  color: #666;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+span.source {
   display: block;
   color: #999;
   font-size: 11px;

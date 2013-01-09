@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Date: Wed, 09 Jan 2013 02:56:26 GMT
+Content-Type: application/json
+Content-Length: 506
+Connection: keep-alive
+X-Embedly-From-Cache: 0
+Access-Control-Max-Age: 86400
+Server: TornadoServer/2.1
+Etag: "ea5f9ff9bff4905355cce373e0ef80a016aab25a"
+X-Embedly-Process-Time: 40
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, OPTIONS
+X-Embedly-Host: staging-api00
+
+{"provider_url": "http://www.crunchbase.com", "description": "Dan Martell skydives and snowboards and believes running is among the secrets to a fruitful life. But the 29-year-old Moncton,", "title": "Dan Martell | CrunchBase Profile", "url": "http://www.crunchbase.com/person/dan-martell", "thumbnail_width": 250, "thumbnail_url": "http://www.crunchbase.com/assets/images/resized/0007/0865/70865v3-max-250x250.jpg", "version": "1.0", "provider_name": "Crunchbase", "type": "link", "thumbnail_height": 187}

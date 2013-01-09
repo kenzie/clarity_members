@@ -1,8 +1,10 @@
 require_relative './spec_helper'
 require 'fakeweb'
 
-page1 = File.join(File.dirname(__FILE__), '..', 'fixtures', 'crunchbase.curl')
-FakeWeb.register_uri(:get, %r|http://www\.crunchbase\.com/|, :response => page1)
+crunchbase = File.join(File.dirname(__FILE__), '..', 'fixtures', 'crunchbase.curl')
+embedly    = File.join(File.dirname(__FILE__), '..', 'fixtures', 'embedly-crunchbase.curl')
+FakeWeb.register_uri(:get, %r|http://www\.crunchbase\.com/|, :response => crunchbase)
+FakeWeb.register_uri(:get, %r|http://api\.embed\.ly/|, :response => embedly)
 
 describe Page do
   describe ".fetch" do
@@ -20,6 +22,17 @@ describe Page do
     #   page3.fetch
     #   expect(page3.final_url).to eq 'http://www.slideshare.net/poornimav/when-to-build-and-when-to-buy'
     # end
+  end
+  describe ".fetch_embedly" do
+    it "has a embedly description, provider, type" do
+      page = Page.new("http://www.crunchbase.com/person/dan-martell")
+      page.fetch
+      page.fetch_embedly
+      expect(page.embedly_description).to eq "Dan Martell skydives and snowboards and believes running is among the secrets to a fruitful life. But the 29-year-old Moncton,"
+      expect(page.embedly_provider).to eq "Crunchbase"
+      expect(page.embedly_type).to eq "link"
+      expect(page.title).to eq "Dan Martell | CrunchBase Profile"
+    end
   end
   describe ".search" do
     page = Page.new("http://www.crunchbase.com/person/dan-martell")
