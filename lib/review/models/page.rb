@@ -1,5 +1,4 @@
 require 'httparty'
-require 'cgi'
 
 # temporary fix for https://github.com/jnunemaker/httparty/issues/180
 module HTTParty
@@ -29,7 +28,7 @@ class Page
   end
 
   def fetch_embedly
-    response = HTTParty.get("http://api.embed.ly/1/oembed?url=#{CGI.escape(@url)}&key=#{ENV['EMBEDLY_KEY']}")
+    response = HTTParty.get("http://api.embed.ly/1/oembed?url=#{@url}&key=#{ENV['EMBEDLY_KEY']}")
     @embedly_description = response['description']
     @embedly_provider = response['provider_name']
     @embedly_type = response['type']
