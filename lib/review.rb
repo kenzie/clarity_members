@@ -32,7 +32,7 @@ class Review < Sinatra::Base
 
   get '/' do
     # TODO eager load the links' users
-    @links = Link.recent.matches.fifty
+    @links = Link.includes(:user).recent.matches.fifty
     haml :index
   end
 
