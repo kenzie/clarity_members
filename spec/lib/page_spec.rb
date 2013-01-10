@@ -17,12 +17,6 @@ describe Page do
       page2 = Page.new("http://www.crunchbase.com/person/dan martell")
       expect(page2.url).to eq 'http://www.crunchbase.com/person/dan%20martell'
     end
-    # COMMENTED OUT FOR SPEED
-    # it "saves the final redirect url" do
-    #   page3 = Page.new('http://buff.ly/UejBux')
-    #   page3.fetch
-    #   expect(page3.final_url).to eq 'http://www.slideshare.net/poornimav/when-to-build-and-when-to-buy'
-    # end
   end
 
   describe ".fetch_embedly" do
