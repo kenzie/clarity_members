@@ -2,7 +2,7 @@ class Link < ActiveRecord::Base
 
   scope :matches, where(:state => 'match')
   scope :fifty, limit(50)
-  scope :recent, order('updated_at DESC')
+  scope :recent, order('created_at DESC')
 
   belongs_to :user, :foreign_key => 'screen_name', :primary_key => 'twitter_screen_name'
 
