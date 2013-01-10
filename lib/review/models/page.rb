@@ -33,7 +33,7 @@ class Page
     @embedly_description = response['description']
     @embedly_provider = response['provider_name']
     @embedly_type = response['type']
-    @title = response['title'] unless response['title'].nil?
+    @title = response['title'] unless response['title'].nil? || response['title'] == 'title'
     @url = response['url'] unless response['url'].nil?
     self
   end
