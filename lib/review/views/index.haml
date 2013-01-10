@@ -8,14 +8,7 @@
 %h2 Recent Matches
 %ul.links
   - @links.each do |link|
-    %li.link
-      %div.user
-        %img.avatar{:src => link.user.avatar_url_or_default, :alt => 'Avatar'}
-        = link.user.name
-        %a{:href => link.tweet_url, :title => 'Source Tweet', :target => '_blank'}
-          %img.icon{:src => '/images/icon-16-twitter.gif', :alt => 'Twitter'}
-        %a{:href => link.user.clarity_url, :title => 'Clarity Account', :target => '_blank'}
-          %img.icon{:src => '/images/icon-16-clarity.gif', :alt => 'Clarity'}
+    %li.link.well
       %div.link
         %a{:href => link.url, :title => link.title, :target => '_blank'}
           = link.title.try(:truncate,120)
@@ -23,3 +16,13 @@
           = link.embedly_description
         %span.source
           = link.source
+      %div.user
+        %img.avatar{:src => link.user.avatar_url_or_default, :alt => 'Avatar'}
+        = link.user.name
+        %a{:href => link.tweet_url, :title => 'Source Tweet', :target => '_blank'}
+          %img.icon{:src => '/images/icon-16-twitter.gif', :alt => 'Twitter'}
+        %a{:href => link.user.clarity_url, :title => 'Clarity Account', :target => '_blank'}
+          %img.icon{:src => '/images/icon-16-clarity.gif', :alt => 'Clarity'}
+        &nbsp;
+        %span.time
+          = link.created_at.ago_in_words

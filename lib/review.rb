@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require 'sinatra/activerecord'
 require 'active_support/core_ext/string'
+require 'time-lord'
 
 class Review < Sinatra::Base
 

@@ -11,6 +11,7 @@ gem 'sinatra'
 gem 'sinatra-activerecord'
 gem 'thin'
 gem 'haml'
+gem 'time-lord'
 
 group :development, :test do
   gem 'foreman'
