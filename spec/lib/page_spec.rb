@@ -3,8 +3,8 @@ require 'fakeweb'
 
 crunchbase = File.join(File.dirname(__FILE__), '..', 'fixtures', 'crunchbase.curl')
 embedly    = File.join(File.dirname(__FILE__), '..', 'fixtures', 'embedly-crunchbase.curl')
-FakeWeb.register_uri(:get, %r|http://www\.crunchbase\.com/|, :response => crunchbase)
-FakeWeb.register_uri(:get, %r|http://api\.embed\.ly/|, :response => embedly)
+FakeWeb.register_uri(:get, %r|^http://www\.crunchbase\.com/|, :response => crunchbase)
+FakeWeb.register_uri(:get, %r|^http://api\.embed\.ly/|, :response => embedly)
 
 describe Page do
 
