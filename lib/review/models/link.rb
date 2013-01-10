@@ -3,6 +3,8 @@ class Link < ActiveRecord::Base
   scope :matches, where(:state => 'match')
   scope :fifty, limit(50)
   scope :recent, order('created_at DESC')
+  scope :last_10_days, lambda { where('created_at > ?', 10.days.ago.beginning_of_day) }
+  scope :today, lambda { where('created_at > ?', Time.now.beginning_of_day) }
 
   belongs_to :user, :foreign_key => 'screen_name', :primary_key => 'twitter_screen_name'
 

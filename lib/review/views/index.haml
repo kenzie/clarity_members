@@ -1,9 +1,10 @@
-%h2 Stats
 %p
-  Links:
-  = Link.count
-  &nbsp; Matches:
-  = Link.matches.count
+  %strong
+    Matches:
+  &nbsp; Last 10 Days:
+  = Link.matches.last_10_days.count
+  &nbsp; Today:
+  = Link.matches.today.count
 %h2 Recent Matches
 %ul.links
   - @links.each do |link|
