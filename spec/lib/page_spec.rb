@@ -69,4 +69,19 @@ describe Page do
     end
   end
 
+  describe ".blacklisted?" do
+    it "returns true for blacklisted domains" do
+      stub_const("Page::BLACKLIST", ['crunchbase.com'])
+      page = Page.new("http://www.crunchbase.com/person/dan-martell")
+      page.fetch_embedly
+      expect(page.blacklisted?).to eq true
+    end
+    it "returns false for non-blacklisted domains" do
+      stub_const("Page::BLACKLIST", ['path.com','instagram.com'])
+      page = Page.new("http://www.crunchbase.com/person/dan-martell")
+      page.fetch_embedly
+      expect(page.blacklisted?).to eq false
+    end
+  end
+
 end

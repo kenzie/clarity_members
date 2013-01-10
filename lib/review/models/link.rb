@@ -33,6 +33,7 @@ class Link < ActiveRecord::Base
 
   def populate_match_with_embedly(page)
     page.fetch_embedly
+    set_state('blacklist') and return if page.blacklisted?
     self.title               = page.title
     self.url                 = page.url
     self.embedly_description = page.embedly_description
